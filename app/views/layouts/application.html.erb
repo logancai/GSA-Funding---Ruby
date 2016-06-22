@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>GSA Funding Application System</title>
+  <%= stylesheet_link_tag    'application', media: 'screen, projection', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta name="description" content="UCLA (University of California, Los Angeles) is the largest UC campus in terms of enrollment, and one of the few public research universities located in a major city." />
+  <meta name="keywords" content="UCLA, University of California Los Angeles, UCLA Bruins" />	
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Page Wrap -->
+<div id="page-wrap">
+<!-- Top Bar -->
+<ul class="hide" id="skip-nav">
+    <li><a href="#audience-nav">Skip to Audience Navigation</a></li>
+    <li><a href="#main-nav">Skip to Main Menu</a></li>
+    <li><a href="#searchform">Skip to Search</a></li>
+    <li><a href="#main-content">Skip to Main Content</a></li>
+</ul>
+
+<div id="top-bar" role="navigation">
+    <div id="top-bar-content">
+        <a href="http://www.ucla.edu/" id="edu-link">UCLA.edu</a>
+		<ul id="audience-nav">
+            <li><a href="http://www.ucla.edu/students/prospective-students">Prospective Students</a></li>
+            <li><a href="http://www.ucla.edu/students/current-students">Current Students</a></li>
+            <li><a href="http://www.ucla.edu/faculty">Faculty</a></li>
+            <li><a href="http://www.ucla.edu/staff">Staff</a></li>
+            <li><a href="http://www.ucla.edu/alumni">Alumni</a></li>
+            <li><a href="http://www.ucla.edu/parents-and-families">Parents &amp; Families</a></li>
+		</ul>
+    </div>
+</div>
+<!-- End Top Bar -->
+<!-- Header -->
+<span id="print-logo"><img src="/assets/logo-print.gif"></span>
+
+<div id="header" role="banner">
+        
+        <!-- Header Content -->
+        <div id="header-content">
+            <h1 id="template-logo"><a href="./"><img src="/assets/logo-sample-dept-name.png" alt="Department Name" /></a></h1>
+
+            <!-- Responsive Buttons -->
+            <div id="mobile-buttons">
+                <a href="http://m.ucla.edu/" id="mobile">Apps<span></span></a>
+                <a href="#" id="nav-control">Menu<span></span></a>
+            </div>
+            <!-- End Responsive Buttons -->
+        
+            <div id="header-nav">
+                <div id="searchbox">
+                    <form id="searchform" name="searchform" role="search" method="get" action="">
+                        <input type="text" name="q" id="searchbox-input" class="search-site" title="Search Site" value="Search Site" size="20"  maxlength="255">
+                        <input id="searchbox-btn" type="image" value="Submit" name="search" alt="Search" src="/assets/search-btn.gif">
+                    </form> </div>
+                            
+                <!-- Main Nav -->
+                <div id="main-nav-wrapper" role="navigation">
+                    <ul id="main-nav" class="main-nav-template-spacer">
+                        <li>
+                            <a href="#" class="dropdown-link active">PERSPICIATIS</a>
+                            <ul class="dropdown-wrapper" role="region" aria-live="polite">
+                               <li>
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 1</a></li>
+                                        <li><a href="#">Expanded Nav 2</a></li>
+                                        <li><a href="#">Expanded Nav 3</a></li>
+                                    </ul>
+                                    
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 4</a></li>
+                                        <li><a href="#">Expanded Nav 5</a></li>
+                                        <li><a href="#">Expanded Nav 6</a></li>
+                                    </ul>
+                                    
+                                    <a href="" class="close">Close (X)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-link">UNDE OMNIS</a>
+                            <ul class="dropdown-wrapper" role="region" aria-live="polite">
+                                <li>
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 7</a></li>
+                                        <li><a href="#">Expanded Nav 8</a></li>
+                                        <li><a href="#">Expanded Nav 9</a></li>
+                                    </ul>
+                                    
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 10</a></li>
+                                        <li><a href="#">Expanded Nav 11</a></li>
+                                        <li><a href="#">Expanded Nav 12</a></li>
+                                    </ul>
+                                    
+                                    <a href="" class="close">Close (X)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-link">ISTE NATUS</a>
+                            <ul class="dropdown-wrapper" role="region" aria-live="polite">
+                                <li>
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 13</a></li>
+                                        <li><a href="#">Expanded Nav 14</a></li>
+                                        <li><a href="#">Expanded Nav 15</a></li>
+                                    </ul>
+                                    
+                                    <ul class="nav-column">
+                                        <li><a href="#">Expanded Nav 16</a></li>
+                                        <li><a href="#">Expanded Nav 17</a></li>
+                                        <li><a href="#">Expanded Nav 18</a></li>
+                                    </ul>
+                                    
+                                    <a href="" class="close">Close (X)</a>
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./direct-link-url1">VOLUPTATEM</a></li>
+                        <li><a href="./direct-link-url2">ACCUSANTIUM</a></li>
+                        <li><a href="./direct-link-url3">DOLOREMQUE</a></li>
+                    </ul><!-- End Main Nav -->            
+                    <div id="dropdown-spacer"></div> 
+                </div><!-- End Nav --> 
+            </div><!-- End Nav Group -->           
+        </div>
+        <!-- End Header Content -->
+</div>
+<!-- End Header -->
+<!-- Container -->
+<div id="container">
+
+	<!-- Banner & Nav -->
+	<div id="nav-image-holder">
+		<img src="/assets/960x450.jpg" id="hero-image" alt="Placeholder" />
+		<ul id="secondary-nav" role="navigation">
+            <li><a href="#">Expanded Nav 1</a></li>
+            <li><a href="#" class="active">Expanded Nav 2</a>
+                <ul id="secondary-sub-nav">
+                	<li><a href="#">SUB 1</a></li>
+                	<li><a href="#">SUB 2</a></li>
+                </ul></li>
+            <li><a href="#">Expanded Nav 3</a></li>
+            <li><a href="#">Expanded Nav 4</a></li>
+            <li><a href="#">Expanded Nav 5</a></li>
+            <li><a href="#">Expanded Nav 6</a></li>		
+		</ul>
+	</div>
+	<!-- End Banner & Nav -->	
+	
+	<!-- Main -->
+	<div id="main-content" role="main">
+	<%= yield %>
+	</div>
+	<!-- End Container -->
+	<div id="footer-push"></div>
+
+
+</div>
+<!-- End Page Wrap -->
+<!-- Footer -->
+<div id="footer">
+    <div id="footer-content">
+        <ul id="footer-nav">
+            <li><a href="http://ucla.edu">UCLA.edu</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+			<li><a href="#">Sit</a></li>
+			<li><a href="#">Amet</a></li>
+            <li><a href="#">Consectetur</a></li>
+			<li><a href="#">Adipiscing</a></li>
+        </ul>
+        <ul id="contact-info">
+          <li>Department Name</li>
+            <li>Street</li>
+            <li>Los Angeles, CA 90095</li>
+            <li>555.555.5555</li>
+        </ul>
+        <div id="social-media">
+     		<a href="#" title="Your department on Facebook" class="facebook">Your department on Facebook</a>
+			<a href="#" title="Your department on Twitter" class="twitter">Your department on Twitter</a>
+		</div>
+     </div>
+</div>
+<!-- End Footer -->
+</body>
+</html>
