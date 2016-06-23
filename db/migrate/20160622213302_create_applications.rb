@@ -10,6 +10,9 @@ class CreateApplications < ActiveRecord::Migration
       t.string "organization"
       t.boolean "is_signatory"
       t.integer "status"
+      t.decimal "amount_requested"
+      t.decimal "amount_rewarded"
+      t.float "account_number"
     end
     add_index("applications","owner_id")
     add_index("applications","advisor_id")

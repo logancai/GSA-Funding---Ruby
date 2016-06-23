@@ -15,5 +15,7 @@ class CreateUsers < ActiveRecord::Migration
       t.boolean "rights_to_admin", :default => false
     end
     add_index("users","email")
+
+    User.create(:first_name=>"Logan",:last_name=>"Cai",:email=>"logan.cai@gmail.com",:rights_to_admin=>true)
   end
 end

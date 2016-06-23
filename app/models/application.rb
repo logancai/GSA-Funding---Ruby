@@ -5,5 +5,5 @@ class Application < ActiveRecord::Base
 	has_many :comments
 	has_one :status
 
-	scope :sorted, lambda {order("applications.modified_at DESC")}
+	scope :sorted, lambda {order("applications.updated_at DESC")}
 end

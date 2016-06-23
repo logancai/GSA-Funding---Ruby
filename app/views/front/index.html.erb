@@ -1,2 +1,12 @@
-<h1>Front#index</h1>
-<p>Find me in app/views/front/index.html.erb</p>
+<h2 id="page-header">Funding Applications</h2>
+		
+<div class="section clear-fix">
+	
+	<% @application_types.each do |application_type| %>
+		<%= link_to application_type.full_name, "/applications/"+application_type.short_name, :class=>"callout-link"%>
+		<%if application_type.description != ""%>
+			<p style="padding-left:"35px;"><%= application_type.description %></p>
+		<%else%>
+		<%end%>
+	<% end %>
+</div>
