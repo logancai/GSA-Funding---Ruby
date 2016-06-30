@@ -1,2 +1,7 @@
 <h1>Applications#index</h1>
-<p>Find me in app/views/applications/index.html.erb</p>
+<p>
+<%= @return_message %><br/>
+<%= @current_time %><br/>
+<%= params[:app_name] %><br/>
+<%= @return_message.kind_of?(Hash) %>
+</p>

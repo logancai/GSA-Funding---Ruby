@@ -18,5 +18,6 @@ class CreateApplications < ActiveRecord::Migration
     add_index("applications","advisor_id")
     add_index("applications","organization")
     add_index("applications","status")
+    
   end
 end

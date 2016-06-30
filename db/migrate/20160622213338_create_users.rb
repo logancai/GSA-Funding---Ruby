@@ -16,6 +16,7 @@ class CreateUsers < ActiveRecord::Migration
     end
     add_index("users","email")
 
+    #Initial User
     User.create(:first_name=>"Logan",:last_name=>"Cai",:email=>"logan.cai@gmail.com",:rights_to_admin=>true)
   end
 end
